@@ -1,0 +1,24 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+atomicwrites = "==1.4.0"
+attrs = "==21.4.0"
+colorama = "==0.4.4"
+iniconfig = "==1.1.1"
+pluggy = "==1.0.0"
+py = "==1.11.0"
+pyparsing = "==3.0.6"
+toml = "==0.10.2"
+py-console = "*"
+
+[dev-packages]
+pytest = "*"
+
+[requires]
+python_version = "3.9"
+
+[scripts]
+test = "pytest --durations=10 --durations-min=1.0 -vv"
