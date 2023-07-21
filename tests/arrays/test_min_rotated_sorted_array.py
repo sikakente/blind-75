@@ -1,6 +1,5 @@
-import unittest
 import pytest
-from array.min_rotated_sorted_array import Solution
+from arrays.min_rotated_sorted_array import Solution
 
 
 @pytest.mark.parametrize("nums,expected", [
@@ -10,7 +9,3 @@ from array.min_rotated_sorted_array import Solution
 ])
 def test_find_min(nums, expected):
     assert expected == Solution().find_min(nums)
-
-
-if __name__ == '__main__':
-    unittest.main()

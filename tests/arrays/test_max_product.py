@@ -1,6 +1,6 @@
 import unittest
 import pytest
-from array.max_product_subarray import Solution
+from arrays.max_product_subarray import Solution
 
 
 @pytest.mark.parametrize("nums,expected", [

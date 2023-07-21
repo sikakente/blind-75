@@ -1,6 +1,6 @@
 import unittest
 import pytest
-from array.contains_duplicate import Solution
+from arrays.contains_duplicate import Solution
 
 
 @pytest.mark.parametrize("nums,expected", [

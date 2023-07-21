@@ -1,6 +1,6 @@
 import unittest
 import pytest
-from array.best_time_to_buy_and_sell_stock import Solution
+from arrays.best_time_to_buy_and_sell_stock import Solution
 
 
 @pytest.mark.parametrize("prices,expected", [
@@ -9,7 +9,3 @@ from array.best_time_to_buy_and_sell_stock import Solution
 ])
 def test_max_profit(prices, expected):
     assert expected == Solution().max_profit(prices)
-
-
-if __name__ == '__main__':
-    unittest.main()

@@ -1,6 +1,5 @@
-import unittest
 import pytest
-from array.three_sum import Solution
+from arrays.three_sum import Solution
 
 
 @pytest.mark.parametrize("nums,expected", [
@@ -10,7 +9,3 @@ from array.three_sum import Solution
 ])
 def test_three_sum(nums, expected):
     assert expected == Solution().three_sum(nums)
-
-
-if __name__ == '__main__':
-    unittest.main()

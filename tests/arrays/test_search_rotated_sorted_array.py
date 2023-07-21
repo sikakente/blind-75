@@ -1,6 +1,5 @@
-import unittest
 import pytest
-from array.search_rotated_sorted_array import Solution
+from arrays.search_rotated_sorted_array import Solution
 
 
 @pytest.mark.parametrize("nums,target,expected", [
@@ -10,7 +9,3 @@ from array.search_rotated_sorted_array import Solution
 ])
 def test_search(nums, target, expected):
     assert expected == Solution().search(nums, target)
-
-
-if __name__ == '__main__':
-    unittest.main()

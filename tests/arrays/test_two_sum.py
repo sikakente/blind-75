@@ -1,6 +1,5 @@
-import unittest
 import pytest
-from array.two_sum import Solution
+from arrays.two_sum import Solution
 
 
 @pytest.mark.parametrize("nums,target,expected", [
@@ -9,7 +8,3 @@ from array.two_sum import Solution
 ])
 def test_two_sum(nums, target, expected):
     assert expected == Solution().two_sum(nums, target)
-
-
-if __name__ == '__main__':
-    unittest.main()

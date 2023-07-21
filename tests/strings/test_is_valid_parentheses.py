@@ -1,6 +1,6 @@
 import unittest
 import pytest
-from strings.is_valid_parentheses import Solution
+from ...strings.is_valid_parentheses import Solution
 
 
 @pytest.mark.parametrize("s,expected", [

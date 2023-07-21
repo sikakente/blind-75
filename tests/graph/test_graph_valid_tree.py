@@ -9,7 +9,3 @@ from graph.graph_valid_tree import Solution
 ])
 def test_valid_tree(n, edges, expected):
     assert expected == Solution().valid_tree(n, edges)
-
-
-if __name__ == '__main__':
-    unittest.main()

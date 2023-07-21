@@ -1,6 +1,5 @@
-import unittest
 import pytest
-from array.product_except_self import Solution
+from arrays.product_except_self import Solution
 
 
 @pytest.mark.parametrize("nums,expected", [
@@ -9,7 +8,3 @@ from array.product_except_self import Solution
 ])
 def test_product_except_self(nums, expected):
     assert expected == Solution().product_except_self(nums)
-
-
-if __name__ == '__main__':
-    unittest.main()

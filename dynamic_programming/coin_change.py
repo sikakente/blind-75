@@ -42,6 +42,7 @@ class Solution2:
             for denom in denoms:
                 difference = target - denom
                 if difference >= 0:
-                    all_change[target] = min(all_change[difference] + 1, all_change[target])
+                    all_change[target] = min(
+                        all_change[difference] + 1, all_change[target])
 
         return all_change[n] if all_change[n] != float("inf") else -1

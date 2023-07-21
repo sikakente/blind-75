@@ -1,6 +1,6 @@
 import unittest
 import pytest
-from array.container_most_water import Solution
+from arrays.container_most_water import Solution
 
 
 @pytest.mark.parametrize("height,expected", [

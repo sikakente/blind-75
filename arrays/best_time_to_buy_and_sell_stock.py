@@ -12,3 +12,4 @@ class Solution:
                 profit = max(profit, price - min_price)
 
         return profit
+

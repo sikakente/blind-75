@@ -1,5 +1,5 @@
 import pytest
-from array.spiral_matrix import Solution
+from arrays.spiral_matrix import Solution
 
 
 @pytest.mark.parametrize("matrix,expected", [

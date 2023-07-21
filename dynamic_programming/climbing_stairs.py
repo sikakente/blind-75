@@ -1,5 +1,13 @@
 class Solution:
     def climb_stairs(self, n: int) -> int:
+        """_summary_
+
+        Args:
+            n (int): _description_
+
+        Returns:
+            int: _description_
+        """
         cache = {}
 
         def climb(step):

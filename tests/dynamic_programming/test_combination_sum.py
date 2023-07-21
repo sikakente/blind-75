@@ -10,6 +10,3 @@ from dynamic_programming.combination_sum import Solution
 def test_combination_sum(nums, target, expected):
     assert expected == Solution().combination_sum4(nums, target)
 
-
-if __name__ == '__main__':
-    unittest.main()

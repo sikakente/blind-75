@@ -1,4 +1,3 @@
-import unittest
 import pytest
 from graph.longest_consecutive import Solution
 
@@ -9,7 +8,3 @@ from graph.longest_consecutive import Solution
 ])
 def test_longest_consecutive(nums, expected):
     assert expected == Solution().longest_consecutive(nums)
-
-
-if __name__ == '__main__':
-    unittest.main()
