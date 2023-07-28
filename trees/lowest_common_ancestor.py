@@ -1,4 +1,5 @@
 from collections import namedtuple
+from trees.utils.tree import TreeNode
 
 Ancestor = namedtuple("Ancestor", "num_nodes ancestor")
 
@@ -17,7 +18,8 @@ class Solution:
             if right_val.num_nodes == 2 and right_val.ancestor is not None:
                 return right_val
 
-            num_nodes = (left_val.num_nodes + right_val.num_nodes + (p, q).count(node))
+            num_nodes = (left_val.num_nodes +
+                         right_val.num_nodes + (p, q).count(node))
             return Ancestor(num_nodes=2, ancestor=node) if num_nodes == 2 else Ancestor(num_nodes=num_nodes,
                                                                                         ancestor=None)
         ans = helper(root)
