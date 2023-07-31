@@ -1,8 +1,9 @@
+from typing import List
+
+
 class Solution:
     def generateParenthesis(self, n: int) -> List[str]:
-
         parentheses = []
-
         def generate(closed, opened, s):
             if closed == n and opened == n:
                 parentheses.append("".join(s))
