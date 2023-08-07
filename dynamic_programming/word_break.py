@@ -6,8 +6,10 @@ class Solution:
         memo = {}
 
         def find(s):
-            if s == '': return True
-            if s in memo: return memo[s]
+            if s == '':
+                return True
+            if s in memo:
+                return memo[s]
 
             for word in wordDict:
                 # current word is at beginning of string
