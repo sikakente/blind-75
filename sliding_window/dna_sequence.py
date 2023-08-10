@@ -21,7 +21,6 @@ class Solution:
         current_hash = 0
         for i in range(10):
             current_hash = (current_hash * base) + char_mapping[s[i]]
-            print(current_hash, i)
 
         hashes.add(current_hash)
 
